@@ -8,12 +8,16 @@ Conda provides a way to setup environment suited for GBS or other pipelines.
 
 See “Quickstart install instructions part” of https://www.anaconda.com/docs/getting-started/miniconda/install#quickstart-install-instructions
 
+*For GLIBC 2.17, use Miniconda3-py311_23.10.0-1-Linux-x86_64.sh
+
 ```bash
 mkdir -p ~/miniconda3
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+wget https://repo.anaconda.com/miniconda/Miniconda3-py311_23.10.0-1-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
 bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
 rm ~/miniconda3/miniconda.sh
+~/miniconda3/bin/conda init bash
 
+# restart terminal
 # inactivate conda being started by default
 conda config --set auto_activate_base false
 ```
