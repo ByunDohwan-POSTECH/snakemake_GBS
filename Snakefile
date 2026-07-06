@@ -177,7 +177,7 @@ rule markdup:
         " -M {output.metric}"
         " --TMP_DIR {resources.tmpdir}"
         " --REMOVE_DUPLICATES true;"
-        "samtools index {output.bam} -o {output.index}"
+        "samtools index {output.bam}"
 
 
 # variant calling (VCF)
